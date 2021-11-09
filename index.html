@@ -3,214 +3,143 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>A Simple One-File Web Page</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    body {
-      background-color: #eaeaea;
-      color: #333333;
-      font-family: sans-serif;
-      font-size: 18px;
-      margin: 0;
-    }
+  <title>Joe Bloggs - Résumé</title>
+  <meta name="description" content="Résumé for Joe Bloggs." />
 
-    header {
-      background-color: #9b2f2f;
-      color: whitesmoke;
-      padding: 1em 4em;
-    }
+  <meta name="viewport" content="width=device-width" />
 
-    main {
-      padding: 1em 4em;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Rokkitt:wght@400;700&display=swap">
 
-    footer {
-      background-color: #feb236;
-      padding: 1em 4em;
-      text-align: center;
-    }
-
-    h2,
-    h3,
-    h4 {
-      color: #6b5b95;
-    }
-
-    h1 {
-      line-height: 1.25;
-      margin: 0 0 10px;
-      font-size: 40px;
-      font-weight: bold;
-    }
-
-    h4 {
-      padding-left: 1em;
-    }
-
-    p {
-      line-height: 1.7em;
-      margin-bottom: 15px;
-    }
-
-    main>p {
-      padding-left: 1em;
-    }
-
-    h4+p {
-      padding-left: 2em;
-    }
-
-    blockquote {
-      border-left: 8px solid #6b5b95;
-      padding-left: 1em;
-    }
-
-    a,
-    a:visited {
-      color: #d64161;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    palladio-graph {
-      border: 2px solid #6b5b95;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
   <header>
-    <h1>A Simple One-File Web Page</h1>
-    Created especially for this workshop.
-  </header>
-  <main>
-    <h2>Introduction</h2>
-    <p>This is a simple example page to demonstrate what writing HTML and CSS by hand might look like.</p>
+    <div class="headshot">
+      <img src="headshot.jpg" alt="Joe Bloggs" />
+    </div>
 
-    <section>
-      <article>
-        <h2>An Example Article</h2>
-        <p>
-          Lorem ipsum dolor sit amet, <strong>consectetur adipisicing
-            elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          <em>exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat</em>. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
-        </p>
-        <blockquote>
-          <p>This is a GREAT pull quote.</p>
-          <a href="#">- Author</a>
-        </blockquote>
-        <p>
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit, sed quia non numquam eius modi tempora
-          incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-          enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-          autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-          nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-          voluptas nulla pariatur?"
-        </p>
-        <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos
-          dolores et quas molestias excepturi sint occaecati cupiditate non
-          provident, similique sunt in culpa qui officia deserunt mollitia
-          animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-          est et expedita distinctio.
-        </p>
-      </article>
-    </section>
+    <div class="name">
+      <h1>Joe Bloggs</h1>
+      <h2>Job Title</h2>
+    </div>
 
-    <hr />
-
-    <section>
-      <h2>Links</h2>
+    <div class="contact-details">
       <ul>
-        <li><a href="#">Sample text link</a></li>
-        <li><a href="#">Sample button link</a></li>
+        <li>e: <a href="mailto:joe@bloggs.com">joe@bloggs.com</a></li>
+        <li>w: <a href="http://www.bloggs.com/">www.bloggs.com</a></li>
+        <li>m: 650-123-4567</li>
       </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-title">
+        <h2>Personal Profile</h2>
+      </div>
+
+      <div class="section-content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          dolor metus, interdum at scelerisque in, porta at lacus.
+          Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Donec ultricies massa et erat
+          luctus hendrerit. Curabitur non consequat enim. Vestibulum
+          bibendum mattis dignissim. Proin id sapien quis libero interdum
+          porttitor.
+        </p>
+      </div>
+
     </section>
 
-    <hr />
+    <section>
+      <div class="section-title">
+        <h2>Work Experience</h2>
+      </div>
 
-    <h2>Section 2</h2>
-    <p>
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui
-      blanditiis praesentium voluptatum deleniti atque corrupti quos.
-    </p>
+      <div class="section-content">
 
-    <h2>Section 3</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-    </p>
+        <h3>Job Title at Company</h3>
+        <p class="section-subheading">April 2011 - Present</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          ultricies massa et erat luctus hendrerit. Curabitur non
+          consequat enim. Vestibulum bibendum mattis dignissim. Proin id
+          sapien quis libero interdum porttitor.
+        </p>
 
-    <h3>Section 3.1</h3>
-    <p>
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui
-      blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-      et quas molestias excepturi sint occaecati cupiditate non provident,
-      similique sunt in culpa qui officia deserunt mollitia animi, id est
-      laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-      distinctio.
-    </p>
+        <h3>Job Title at Company</h3>
+        <p class="section-subheading">Janruary 2007 - March 2011</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          ultricies massa et erat luctus hendrerit. Curabitur non
+          consequat enim. Vestibulum bibendum mattis dignissim. Proin id
+          sapien quis libero interdum porttitor.
+        </p>
 
-    <h4>Section 3.1.1</h4>
-    <p>
-      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-      consectetur, adipisci velit, sed quia non numquam eius modi tempora
-      incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
-      ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-      laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel
-      eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-      molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-      nulla pariatur?"
-    </p>
+        <h3>Job Title at Company</h3>
+        <p class="section-subheading">October 2004 - December 2006</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          ultricies massa et erat luctus hendrerit. Curabitur non
+          consequat enim. Vestibulum bibendum mattis dignissim. Proin id
+          sapien quis libero interdum porttitor.
+        </p>
 
-    <h3>Section 3.2</h3>
-    <p>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-      illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-      odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-      voluptatem sequi nesciunt.
-    </p>
+      </div>
+    </section>
 
-    <hr>
+    <section>
+      <div class="section-title">
+        <h2>Key Skills</h2>
+      </div>
 
-    <h2>Palladio Graph</h2>
+      <div class="section-content">
+        <ul class="skills">
+          <li>A Key Skill</li>
+          <li>A Key Skill</li>
+          <li>A Key Skill</li>
+          <li>A Key Skill</li>
+          <li>A Key Skill</li>
+          <li>A Key Skill</li>
+          <li>A Key Skill</li>
+          <li>A Key Skill</li>
+        </ul>
+      </div>
+    </section>
 
-    <palladio-graph width="800px" height="600px" zoom-to-fit
-      project-url="https://raw.githubusercontent.com/simonwiles/palladio-webcomponents-showcase/main/example_projects/Cushman_500.palladio.1.2.9.json">
-    </palladio-graph>
+    <section>
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
 
-    <script type="module"
-      src="https://cdn.jsdelivr.net/npm/palladio-webcomponents@0.5/palladio-graph-component.js"></script>
+      <div class="section-content">
 
+        <h3>College/University</h3>
+        <p class="section-subheading">Qualification</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          ultricies massa et erat luctus hendrerit. Curabitur non
+          consequat enim.
+        </p>
+
+        <h3>College/University</h3>
+        <p class="section-subheading">Qualification</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          ultricies massa et erat luctus hendrerit. Curabitur non
+          consequat enim.
+        </p>
+
+      </div>
+    </section>
   </main>
-
-  <footer>
-    This is where any footer text goes. Consider adding, e.g. a
-    <a href="https://creativecommons.org/choose/" title="Creative Commons License Chooser">
-      Creative Commons license</a>
-    for example.
-  </footer>
 </body>
 
 </html>
